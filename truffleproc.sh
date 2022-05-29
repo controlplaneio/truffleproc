@@ -16,6 +16,8 @@ CONTAINER="${CONTAINER_IMAGE}@${CONTAINER_SHA}"
 main() {
   ensure_sudo
 
+  ensure_bin "gdb"
+
   echo "# coredumping pid ${PID}"
 
   coredump_pid
@@ -35,6 +37,10 @@ main() {
 
 ensure_sudo() {
   sudo touch /dev/null
+}
+
+ensure_bin() {
+  which "$1" > /dev/null
 }
 
 coredump_pid() {
