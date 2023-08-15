@@ -1,6 +1,9 @@
 # truffleproc — hunt secrets in process memory
 
-2021 [@controlplaneio](https://twitter.com/controlplaneio)
+
+![TruffleProc Logo](docs/assets/truffleproc_logo.png)
+
+
 
 <!-- use markdown-toc to generate a table of contents here -->
 
@@ -99,3 +102,5 @@ Commit: Coredump of strings for pid 6174
 <!--Jenkins->"Build Slave": automated trigger:\nimage scan-->
 <!--@enduml-->
 <!--```-->
+
+2021 [@controlplaneio](https://twitter.com/controlplaneio)
